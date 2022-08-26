@@ -1,12 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
-int setithBit(int n)
+int setithBit(int n, int i)
 {
-  return n | (1<<n);
+  return n | (1<<i);
 }
 int main()
 {
-  int n;
-  cin>>n;
-  cout<<setithBit(n);
+  int n, i;
+  cin>>n>>i;
+  cout<<setithBit(n, i);
 }
