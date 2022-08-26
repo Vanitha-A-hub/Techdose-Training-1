@@ -6,13 +6,9 @@ int twosCompliment(int n)
   for(int i=0; n>>i != 0; i++)
   {
     if(flag == 0 && ((n&mask) != 0))
-    {
       flag = 1;
-    }
     else if(flag == 1)
-    {
       n ^= mask;
-    }
     mask <<= 1;
   }
   return n;
