@@ -1,12 +1,5 @@
 class Solution {
 public:
-    int max(int a, int b)
-    {
-        if(a>b)
-            return a;
-        else
-            return b;
-    }
     int lengthOfLongestSubstring(string s) {
         int alpha[128] = {0};
         int start = 0, len = s.length();
