@@ -17,7 +17,7 @@ public:
         i++;
         swap(nums[i], nums[high]);
         if(i == k)
-            return nums[i];
+            return nums[i] ;
         else if(i < k)
         {
             return quickSelect(nums, i+1, high, k);
